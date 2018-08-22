@@ -33,17 +33,13 @@ object pepita {
 	
 	method haceLoQueQuieras() { 
 		if (self.estaDebil()) {
-			self.comer(alpiste,150)
+			self.comer(alpiste,20)
 		}
 		else { 
 			if (self.estaFeliz()){
-				self.volar(200)
-			}
-			else {
-				self.volar(100)
-			}				
-		}
-	} 
-		
+				self.volar(8)
+				}
+			} 
+	}
 	
 }

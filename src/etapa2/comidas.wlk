@@ -20,11 +20,24 @@ object sorgo {
 	method energiaPorGramo() { return 9 }
 }
 
-object mijo{
-	method energiaPorGramo() { return 12 }
-}
 
 object canelones {
-	method energiaPorGramo() { return 70 }
+	var energiaCanelones = 20
+	
+	method energiaPorGramo() { return energiaCanelones }
+	
+	method ponerSalsa() {return energiaCanelones += 5}
+	method ponerQueso() {return energiaCanelones += 7}
 }
 
+object mijo {
+	var energiaMijo 
+		
+	method energiaPorGramo() {return energiaMijo}
+	
+	method mojarse(){ energiaMijo = 15 }
+	
+	method secarse(){ energiaMijo = 20 }
+	
+	
+}
